@@ -12,6 +12,8 @@
 		BC1E818B254AA9F3001EE4B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1E8189254AA9F3001EE4B6 /* Main.storyboard */; };
 		BC1E818D254AA9FD001EE4B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1E818C254AA9FD001EE4B6 /* Assets.xcassets */; };
 		BC1E8190254AA9FD001EE4B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1E818E254AA9FD001EE4B6 /* LaunchScreen.storyboard */; };
+		BC1E8198254ADD15001EE4B6 /* RulesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E8197254ADD15001EE4B6 /* RulesVC.swift */; };
+		BC1E819A254AEBCC001EE4B6 /* cardsDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E8199254AEBCC001EE4B6 /* cardsDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BC1E818C254AA9FD001EE4B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC1E818F254AA9FD001EE4B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC1E8191254AA9FD001EE4B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC1E8197254ADD15001EE4B6 /* RulesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesVC.swift; sourceTree = "<group>"; };
+		BC1E8199254AEBCC001EE4B6 /* cardsDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardsDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,9 @@
 			children = (
 				BC1E8185254AA9F3001EE4B6 /* AppDelegate.swift */,
 				BC1E8187254AA9F3001EE4B6 /* CardSelectionVC.swift */,
+				BC1E8199254AEBCC001EE4B6 /* cardsDeck.swift */,
 				BC1E8189254AA9F3001EE4B6 /* Main.storyboard */,
+				BC1E8197254ADD15001EE4B6 /* RulesVC.swift */,
 				BC1E818C254AA9FD001EE4B6 /* Assets.xcassets */,
 				BC1E818E254AA9FD001EE4B6 /* LaunchScreen.storyboard */,
 				BC1E8191254AA9FD001EE4B6 /* Info.plist */,
@@ -137,6 +143,8 @@
 			files = (
 				BC1E8188254AA9F3001EE4B6 /* CardSelectionVC.swift in Sources */,
 				BC1E8186254AA9F3001EE4B6 /* AppDelegate.swift in Sources */,
+				BC1E819A254AEBCC001EE4B6 /* cardsDeck.swift in Sources */,
+				BC1E8198254ADD15001EE4B6 /* RulesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
