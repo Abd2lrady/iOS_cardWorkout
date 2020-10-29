@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card SelectionVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CardSelectionVC" customModule="iOS_cardWorkout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10D" translatesAutoresizingMaskIntoConstraints="NO" id="lFk-Ft-Qah">
+                                <rect key="frame" x="82" y="153" width="250.00000000000011" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="EUF-en-AKy"/>
+                                    <constraint firstAttribute="width" secondItem="lFk-Ft-Qah" secondAttribute="height" multiplier="250:350" id="JmA-gh-SCh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvD-Mh-Pz6">
+                                <rect key="frame" x="77" y="533" width="260" height="50"/>
+                                <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="EwN-15-mwm"/>
+                                    <constraint firstAttribute="height" constant="50" id="kud-So-PdG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Stop!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGV-UJ-lpI">
+                                <rect key="frame" x="77" y="605" width="115" height="50"/>
+                                <color key="backgroundColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QiW-hR-9RV"/>
+                                    <constraint firstAttribute="width" constant="115" id="VXo-kb-ZJZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnO-22-Qu2">
+                                <rect key="frame" x="222" y="605" width="115" height="50"/>
+                                <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="LIC-0u-yfV"/>
+                                    <constraint firstAttribute="height" constant="50" id="niG-T7-TIJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Rules">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lFk-Ft-Qah" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-125" id="HHG-6b-8km"/>
+                            <constraint firstItem="lFk-Ft-Qah" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OkP-2r-pOh"/>
+                            <constraint firstItem="LGV-UJ-lpI" firstAttribute="top" secondItem="TvD-Mh-Pz6" secondAttribute="bottom" constant="22" id="PL8-0O-TJv"/>
+                            <constraint firstItem="TvD-Mh-Pz6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VHc-jQ-sb4"/>
+                            <constraint firstItem="LGV-UJ-lpI" firstAttribute="leading" secondItem="TvD-Mh-Pz6" secondAttribute="leading" id="mFa-p4-80Z"/>
+                            <constraint firstItem="TvD-Mh-Pz6" firstAttribute="top" secondItem="lFk-Ft-Qah" secondAttribute="bottom" constant="30" id="nPc-z7-TZy"/>
+                            <constraint firstItem="vnO-22-Qu2" firstAttribute="trailing" secondItem="TvD-Mh-Pz6" secondAttribute="trailing" id="pF9-HZ-gCM"/>
+                            <constraint firstItem="vnO-22-Qu2" firstAttribute="top" secondItem="TvD-Mh-Pz6" secondAttribute="bottom" constant="22" id="phO-H4-B4F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="10D" width="691" height="1056"/>
+    </resources>
+</document>
