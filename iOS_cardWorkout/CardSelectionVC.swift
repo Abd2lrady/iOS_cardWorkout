@@ -11,7 +11,7 @@ import UIKit
 class CardSelectionVC: UIViewController {
     
     var timer: Timer!
-    var cards = deck.allCards
+    var cards = Deck.allCards
 
     @IBOutlet weak var cardImageView: UIImageView!
     
@@ -37,13 +37,16 @@ class CardSelectionVC: UIViewController {
     }
     
     func startTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(changeCard), userInfo: nil, repeats: true)
+ 
+        timer = Timer.scheduledTimer(timeInterval: 0.05,
+                                     target: self,
+                                     selector: #selector(changeCard),
+                                     userInfo: nil,
+                                     repeats: true)
     }
     
     @objc func changeCard() {
         cardImageView.image = cards.randomElement() ?? UIImage()
-        
-        
     }
     @IBAction func stopBtnTapped(_ sender: UIButton) {
         timer.invalidate()

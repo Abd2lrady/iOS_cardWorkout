@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B443856E26553B0B0026A2D7 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B443856D26553B0B0026A2D7 /* Assets.swift */; };
+		B4438571265540820026A2D7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B4438570265540820026A2D7 /* .swiftlint.yml */; };
 		BC1E8186254AA9F3001EE4B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E8185254AA9F3001EE4B6 /* AppDelegate.swift */; };
 		BC1E8188254AA9F3001EE4B6 /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E8187254AA9F3001EE4B6 /* CardSelectionVC.swift */; };
 		BC1E818B254AA9F3001EE4B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1E8189254AA9F3001EE4B6 /* Main.storyboard */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4438569265538E70026A2D7 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		B443856D26553B0B0026A2D7 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = SOURCE_ROOT; };
+		B4438570265540820026A2D7 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BC1E8182254AA9F3001EE4B6 /* iOS_cardWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_cardWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1E8185254AA9F3001EE4B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC1E8187254AA9F3001EE4B6 /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
@@ -39,9 +44,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B443856B265539910026A2D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC1E818C254AA9FD001EE4B6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BC1E8179254AA9F2001EE4B6 = {
 			isa = PBXGroup;
 			children = (
+				B4438570265540820026A2D7 /* .swiftlint.yml */,
+				B4438569265538E70026A2D7 /* swiftgen.yml */,
 				BC1E8184254AA9F3001EE4B6 /* iOS_cardWorkout */,
 				BC1E8183254AA9F3001EE4B6 /* Products */,
 			);
@@ -58,12 +73,13 @@
 		BC1E8184254AA9F3001EE4B6 /* iOS_cardWorkout */ = {
 			isa = PBXGroup;
 			children = (
+				B443856B265539910026A2D7 /* Resources */,
 				BC1E8185254AA9F3001EE4B6 /* AppDelegate.swift */,
 				BC1E8187254AA9F3001EE4B6 /* CardSelectionVC.swift */,
 				BC1E8199254AEBCC001EE4B6 /* cardsDeck.swift */,
+				B443856D26553B0B0026A2D7 /* Assets.swift */,
 				BC1E8189254AA9F3001EE4B6 /* Main.storyboard */,
 				BC1E8197254ADD15001EE4B6 /* RulesVC.swift */,
-				BC1E818C254AA9FD001EE4B6 /* Assets.xcassets */,
 				BC1E818E254AA9FD001EE4B6 /* LaunchScreen.storyboard */,
 				BC1E8191254AA9FD001EE4B6 /* Info.plist */,
 			);
@@ -77,6 +93,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC1E8194254AA9FD001EE4B6 /* Build configuration list for PBXNativeTarget "iOS_cardWorkout" */;
 			buildPhases = (
+				B443856F26553FED0026A2D7 /* SwiftLint */,
+				B443856A2655393F0026A2D7 /* SwiftGen */,
 				BC1E817E254AA9F2001EE4B6 /* Sources */,
 				BC1E817F254AA9F2001EE4B6 /* Frameworks */,
 				BC1E8180254AA9F2001EE4B6 /* Resources */,
@@ -128,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4438571265540820026A2D7 /* .swiftlint.yml in Resources */,
 				BC1E8190254AA9FD001EE4B6 /* LaunchScreen.storyboard in Resources */,
 				BC1E818D254AA9FD001EE4B6 /* Assets.xcassets in Resources */,
 				BC1E818B254AA9F3001EE4B6 /* Main.storyboard in Resources */,
@@ -135,6 +154,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B443856A2655393F0026A2D7 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed\"\nfi\n\n";
+		};
+		B443856F26553FED0026A2D7 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC1E817E254AA9F2001EE4B6 /* Sources */ = {
@@ -144,6 +202,7 @@
 				BC1E8188254AA9F3001EE4B6 /* CardSelectionVC.swift in Sources */,
 				BC1E8186254AA9F3001EE4B6 /* AppDelegate.swift in Sources */,
 				BC1E819A254AEBCC001EE4B6 /* cardsDeck.swift in Sources */,
+				B443856E26553B0B0026A2D7 /* Assets.swift in Sources */,
 				BC1E8198254ADD15001EE4B6 /* RulesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

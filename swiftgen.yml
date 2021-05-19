@@ -1,0 +1,7 @@
+
+xcassets:
+  inputs:
+    - iOS_cardWorkout/Resources/
+  outputs:
+    - templateName: swift5
+      output: Assets.swift
